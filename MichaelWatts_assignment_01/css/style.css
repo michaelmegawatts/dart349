@@ -1,0 +1,329 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* when padding and border are added it has no effect on w and H */
+}
+
+body {
+  /* background: url(../images/galaxy.jpg) fixed center center no-repeat;
+  background-size: cover; */
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, .85);
+  position: fixed;
+  /* padding-top: .5em; */
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  color: #8B9BA8;
+  font-size: 1.25em;
+  padding: .5em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  float: left;
+}
+
+nav a:link {
+  color: #8B9BA8;
+  font-size: 1em;
+  text-transform: lowercase;
+  padding: .75em 1em;
+  display: inline-block;
+  /* display: flex; */
+  flex-flow:row wrap;
+  /* justify-content: flex-end; */
+}
+
+nav a:visited {
+  color: #D0DADC;
+}
+
+nav a:hover{
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(167, 32, 149, 0.95);
+}
+
+nav a:active{
+  color: #A72095;
+}
+
+nav a.current{
+  font-style: italic;
+}
+
+/* css for index */
+#bio {
+  background: url(../images/galaxy.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
+#bio header {
+  text-align: center;
+  background: url(../images/galaxy.jpg) fixed center center no-repeat;
+  background-size: cover;
+
+  color: white;
+  width: 100%;
+  /* vh = viewport heigth 100vh = 100% of viewport */
+  height: 100vh;
+  display: flex;
+  /* flex direction = column or row, which affects justify content (keeps things in a row) */
+  flex-direction: column;
+  justify-content: flex-end;
+  /* then align items brings items in row */
+  align-items: center;
+  padding-bottom: 10vh;
+
+}
+
+#bio h1 {
+  border-bottom: solid .1px;
+  padding-bottom: 30px;
+  font-family: 'MuseoModerno', cursive;
+  text-transform: uppercase;
+  font-size: 11vmax;
+  line-height: 100%;
+  text-shadow: 5px 5px 15px rgba(167, 32, 149, 0.75);
+
+}
+
+#bio h2 {
+  font-family: 'MuseoModerno', cursive;
+  text-transform: capitalize;
+  font-size: 3vmax;
+  font-weight: normal;
+}
+
+#bio h5 {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 35px solid white;
+}
+
+.biotext {
+  /* border: solid red; */
+  background: rgba(0, 0, 0, 0.6);
+  width:100%;
+  min-height: 55vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.biotext figure {
+  /* border: solid white; */
+  max-width: 100%;
+  padding: 3em;
+}
+
+.biotext figure img {
+  /* border: solid pink; */
+  width: 100%;
+}
+
+.biotext article {
+  /* border: solid green; */
+  /* background: black; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: white;
+  flex: 1;
+  flex-flow: wrap;
+  padding-top: 1.75em;
+
+  margin: 1em 3em 1em;
+  margin-right:
+}
+
+.biotext h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.5vmax;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.biotext p {
+  margin: 10px;
+}
+
+
+/* css for exercises */
+
+#exercises {
+  background: url(../images/space.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
+#exercises header {
+  /* responsive background */
+  /* background: url(../images/space.jpg) fixed center center no-repeat;
+  background-size: cover; */
+  color: white;
+  width: 100%;
+  /* vh = viewport height 100vh = 100% of viewport */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+#exercises h1 {
+  font-family: 'MuseoModerno', cursive;
+  text-transform: uppercase;
+  font-size: 10vmax;
+  line-height: 100%;
+  text-shadow: 5px 5px 15px rgba(0, 138, 216, 0.75);
+  margin-top: 90px;
+}
+
+#exercises h2 {
+  font-family: 'MuseoModerno', cursive;
+  text-transform: capitalize;
+  font-size: 3vmax;
+  font-weight: normal;
+}
+
+.homework {
+  max-width: 100%;
+  min-height: 25vh;
+  display: flex;
+  flex-flow: row wrap;
+  /* border: solid pink; */
+}
+
+.homework figure {
+  flex: 1;
+  min-width: 300px;
+  /* border: solid blue; */
+}
+
+.homework figure img {
+  width: 100%;
+  padding: 1em;
+  /* border: solid white 1px; */
+}
+
+.homework p {
+  position: absolute;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3vmax;
+  color: white;
+  padding-left: 40px;
+  padding-top: 25px;
+  /* border: solid red; */
+}
+
+section.divider2 {
+  /* border: solid green; */
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/* css for projects */
+
+#projects {
+  background: url(../images/planet.jpg) fixed center center no-repeat;
+  background-size: cover;
+}
+
+#projects header {
+  /* border: solid 1px; */
+  margin-top: 50px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#projects h1 {
+  font-family: 'MuseoModerno', cursive;
+  text-transform: uppercase;
+  font-size: 10vmax;
+  line-height: 100%;
+  text-shadow: 5px 5px 15px rgba(225, 203, 175, 0.75);
+}
+
+#projects h2 {
+  font-family: 'MuseoModerno', cursive;
+  text-transform: capitalize;
+  font-size: 3vmax;
+  font-weight: normal;
+}
+
+
+div {
+  /* border: solid pink; */
+}
+
+.col2{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  /* border: solid red; */
+}
+
+.midfinal {
+  display: flex;
+  justify-content:  space-around;
+  /* border: solid pink; */
+}
+
+.midfinal figure {
+  width: 40%;
+  min-width: 30%;
+  position: relative;
+  opacity: 0.8;
+  /* border: solid white .1px; */
+}
+
+.midfinal figure img{
+  width:100%;
+}
+
+.midfinal figure figcaption{
+  position: absolute;
+  color: white;
+  font-size: 2vmax;
+  font-family: 'Archivo Black', sans-serif;
+  bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+/* footer for projects page */
+#projectfooter {
+  position: fixed;
+  /* border: solid white; */
+  color: white;
+  padding: 1em 1em;
+  padding-left: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  float: left;
+  bottom: 0;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  /* border: solid white; */
+  color: white;
+  padding: 1em 1em;
+  padding-left: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  float: left;
+  bottom: 0;
+  width: 100%;
+}

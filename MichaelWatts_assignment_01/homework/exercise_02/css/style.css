@@ -1,0 +1,136 @@
+/* command / tab = a css comment
+a css reset, everthing has * applied to it*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* adding border or padding has no effect on size */
+}
+
+body {
+  /* background-color; */
+  font-family: rockwell, arial, sans-serif;
+  font-size: 15px;
+  color: #020873;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #27368C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #F2F2F2;
+  font-family: metropolis, menlo, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #A3B5D9;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+header {
+  background-color: #A3B5D9;
+  color: #020873;
+    /* space inside box but around content */
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+    /* margin outside of box */
+  /* margin-bottom: 20px; */
+  text-align: left;
+}
+
+/* font-size: 5em; responsive size */
+h1 {
+  font-size: 4em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* be more specific with attribute to target what you want */
+header h2 {
+  font-size: 2em;
+  text-transform: capitalize;
+  letter-spacing: 6px;
+  font-family: monospace;
+}
+
+article {
+  max/width: 1000px;
+  width: 90%;
+  /* old method for horizontal centering */
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
+article h2 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+
+/* responsive image */
+figure img {
+  display: block;
+  float: left;
+  width: 45%;
+  padding-right: 20px;
+}
+
+figcaption {
+  display: block;
+  font-style: italic;
+  color: black;
+
+}
+
+aside {
+  width: 50%;
+  padding: 20px;
+  margin-left: 15px;
+  float: right;
+  background-color: #739FD9;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.25em;
+}
+
+footer {
+  background-color: #A3B5D9;
+  color: #F2F2F2;
+    /* space inside box but around content */
+  padding: 20px;
+    /* margin outside of box */
+  border-top: 10px solid #27368C;
+  text-align: right;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
